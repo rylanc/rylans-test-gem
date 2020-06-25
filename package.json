@@ -1,0 +1,12 @@
+{
+  "name": "rylans-test-gem",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/rylanc/rylans-test-gem.git",
+  "author": "Rylan Collins <rylan@gusto.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "semantic-release": "^17.1.1",
+    "semantic-release-rubygem": "/Users/rylan.collins/workspace/semantic-release-rubygem/"
+  }
+}
