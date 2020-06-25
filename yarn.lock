@@ -3768,9 +3768,9 @@ safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
 semantic-release-rubygem@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/semantic-release-rubygem/-/semantic-release-rubygem-1.0.0.tgz#6583270ef9eedc66624f68ebbb90c4cc147d4e68"
-  integrity sha512-hODx62q/KXL3TahaFR7zS6LDwfVTzpmG7p88fDQYoHeCb4ock+1Idff6DZB/LAkqwiVct7BvF7xcaEF6dwOXsQ==
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/semantic-release-rubygem/-/semantic-release-rubygem-1.0.1.tgz#089d2bf0ab0ee31c9b993725492cad1ffe5f35cd"
+  integrity sha512-G03WpI+PxwZt8nWnhb9nMsvuTYjGbvX5ytrbr78CD2trrq7qCM7SnMFnb8d2YAg0SVdKlinTOnJuLXYmqMx32w==
   dependencies:
     "@semantic-release/error" "^2.2.0"
     execa "^4.0.2"
