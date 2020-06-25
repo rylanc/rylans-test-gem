@@ -7,6 +7,6 @@
   "license": "MIT",
   "devDependencies": {
     "semantic-release": "^17.1.1",
-    "semantic-release-rubygem": "/Users/rylan.collins/workspace/semantic-release-rubygem/"
+    "semantic-release-rubygem": "^1.0.0"
   }
 }
