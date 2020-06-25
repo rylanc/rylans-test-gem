@@ -14,10 +14,10 @@ jobs:
       language: node_js
       node_js: lts/*
       script: skip
-      before_install:
-        - gem update --system
       deploy:
         provider: script
         skip_cleanup: true
         # script: npx semantic-release
-        script: gem --version
+        script:
+          - gem update --system
+          - gem --version
