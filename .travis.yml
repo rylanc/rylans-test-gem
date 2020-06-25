@@ -17,4 +17,5 @@ jobs:
       deploy:
         provider: script
         skip_cleanup: true
-        script: npx semantic-release
+        # script: npx semantic-release
+        script: gem --version
