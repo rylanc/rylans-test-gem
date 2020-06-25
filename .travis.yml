@@ -20,4 +20,4 @@ jobs:
         # script: npx semantic-release
         script:
           - gem update --system
-          - gem --version
+          - npx semantic-release
