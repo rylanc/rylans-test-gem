@@ -1,6 +1,20 @@
----
-language: ruby
-cache: bundler
-rvm:
-  - 2.6.3
-before_install: gem install bundler -v 2.1.4
+jobs:
+  include:
+    - stage: 'Test'
+      language: ruby
+      rvm:
+        - 2.6.3
+      cache: bundler
+      before_install:
+        - gem install bundler -v 2.1.4
+      script:
+        - bundle exec rake
+    - stage: 'Release'
+      if: type = push AND branch = master
+      language: node_js
+      node_js: lts/*
+      script: skip
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script: npx semantic-release
