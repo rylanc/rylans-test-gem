@@ -13,8 +13,10 @@ jobs:
       if: type = push AND branch = master
       language: node_js
       node_js: lts/*
-      script: skip
+      # script: skip
+      script: ruby --version
       deploy:
         provider: script
         skip_cleanup: true
-        script: npx semantic-release
+        # script: npx semantic-release
+        script: ruby --version
