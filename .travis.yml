@@ -1,22 +1,20 @@
 jobs:
   include:
-    # - stage: 'Test'
-    #   language: ruby
-    #   rvm:
-    #     - 2.6.3
-    #   cache: bundler
-    #   before_install:
-    #     - gem install bundler -v 2.1.4
-    #   script:
-    #     - bundle exec rake
+    - stage: 'Test'
+      language: ruby
+      rvm:
+        - 2.6.3
+      cache: bundler
+      before_install:
+        - gem install bundler -v 2.1.4
+      script:
+        - bundle exec rake
     - stage: 'Release'
       if: type = push AND branch = master
       language: node_js
       node_js: lts/*
-      # script: skip
-      script: ruby --version
+      script: skip
       deploy:
         provider: script
         skip_cleanup: true
-        # script: npx semantic-release
-        script: rvm use 2.5 do npx semantic-release
+        script: npx semantic-release
