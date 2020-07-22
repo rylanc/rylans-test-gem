@@ -10,7 +10,6 @@ jobs:
       script:
         - bundle exec rake
     - stage: 'Release'
-      if: type = push AND branch = master
       language: node_js
       node_js: lts/*
       script: skip
